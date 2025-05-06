@@ -1,0 +1,96 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto",
+    "ignore": [
+      "**/dist/**/*",
+      "**/node_modules/**/*",
+      "**/pnpm-lock.yaml",
+      "**/.next/**",
+      "**/.turbo/**",
+      "packages/client/api/**"
+    ]
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "files": {
+    "ignore": [
+      "**/dist/**/*",
+      "**/node_modules/**/*",
+      "**/pnpm-lock.yaml",
+      "**/.next/**",
+      "**/.turbo/**",
+      "packages/client/api/**"
+    ]
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off",
+        "noCommentText": "warn"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off",
+        "noForEach": "off"
+      },
+      "style": {
+        "noParameterAssign": "off",
+        "noNonNullAssertion": "off",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": true,
+            "requireAscii": true,
+            "filenameCases": ["kebab-case", "PascalCase", "camelCase"]
+          }
+        }
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useButtonType": "off"
+      }
+    },
+    "ignore": [
+      "**/dist/**/*",
+      "**/node_modules/**/*",
+      "**/pnpm-lock.yaml",
+      "**/.next/**",
+      "**/.turbo/**",
+      "packages/client/api/**"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "double",
+      "attributePosition": "auto"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  }
+}
